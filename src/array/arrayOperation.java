@@ -1,9 +1,7 @@
 package array;
 import java.util.Scanner;
 public class arrayOperation {
-   /* Scanner sc = new Scanner(System.in);
-    int[] box;
-    int size;*/
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the size of array :");
@@ -51,6 +49,12 @@ public class arrayOperation {
                 break;
             case 4 :
                 System.out.println("replace last element");
+                System.out.println("enter the new number ");
+                int posn = sc.nextInt();
+                box[n-1] = posn;
+                for (int i = 0; i < n; i++){
+                    System.out.println(box[i]);
+                }
                 break;
             case 5 :
                 System.out.println("insert element at specific index");
@@ -72,10 +76,4 @@ public class arrayOperation {
                 break;
         }
     }
-    /*public static int insert_at_start(int[] box, int size, Scanner sc){
-        System.out.print("enter the number : ");
-        int pos1 = sc.nextInt();
-        box[0] = pos1;
-        return 0;
-    }*/
 }
