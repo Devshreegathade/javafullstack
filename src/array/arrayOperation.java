@@ -13,7 +13,7 @@ public class arrayOperation {
             box[i] = sc.nextInt();
         }
         for (int i = 0; i < n; i++){
-            System.out.print(box[i]);
+            System.out.println(box[i]);
         }
         System.out.println("menu : ");
         System.out.println("1 . min ");
@@ -34,9 +34,23 @@ public class arrayOperation {
         switch (choice){
             case 1 :
                 System.out.println("min in array");
+                int minnum = box[0];
+                for (int i = 0;i < n;i++){
+                    if (box[i] < minnum){
+                        minnum = box[i];
+                    }
+                }
+                System.out.println(minnum);
                 break;
             case 2 :
                 System.out.println("max in array");
+                int maxnum = box[0];
+                for (int i = 0;i < n;i++){
+                    if (box[i] > maxnum){
+                        maxnum = box[i];
+                    }
+                }
+                System.out.println(maxnum);
                 break;
             case 3 :
                 System.out.println("replace element at start");
@@ -64,6 +78,12 @@ public class arrayOperation {
                 break;
             case 7 :
                 System.out.println("average");
+                int count = 0;
+                for (int i = 0;i < n; i++){
+                    count += box[i];
+                }
+                int avg = count/n;
+                System.out.println(avg);
                 break;
             case 8 :
                 System.out.println("middle element");
