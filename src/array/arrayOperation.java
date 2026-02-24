@@ -27,6 +27,7 @@ public class arrayOperation {
         System.out.println("9 . delete from custom location ");
         System.out.println("10 . average of array ");
         System.out.println("11 . middle element ");
+        System.out.println("12 . display");
         System.out.println("12 . exit ");
 
         System.out.print("Enter your choice :");
@@ -71,12 +72,28 @@ public class arrayOperation {
                 }
                 break;
             case 5 :
-                System.out.println("insert element at specific index");
-                break;
-            case 6 :
-                System.out.println("remove specific element");
+                System.out.println("replace custom element");
+                System.out.println("enter the number you want to replace :");
+                int rep_num = sc.nextInt();
+                System.out.println("enter the new number ");
+                int number = sc.nextInt();
+                for (int i = 0; i < n; i++){
+                    if (rep_num >= 0 && rep_num < n){
+                        box[rep_num] = number;
+                        System.out.println("Element replaced successfully.");
+                    }
+                    else {
+                        System.out.println("Invalid index!");
+                    }
+                }
+                for (int i = 0; i < n; i++){
+                    System.out.println(box[i]);
+                }
                 break;
             case 7 :
+                System.out.println("remove specific element");
+                break;
+            case 6 :
                 System.out.println("average");
                 int count = 0;
                 for (int i = 0;i < n; i++){
@@ -90,7 +107,7 @@ public class arrayOperation {
                 break;
 
             case 12 :
-                System.out.println("exit");
+                System.out.println("display");
                 break;
             default:
                 break;
