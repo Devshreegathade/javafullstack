@@ -94,7 +94,7 @@ public class arrayOperation {
                 System.out.println("remove specific element");
                 break;
             case 6 :
-                System.out.println("average");
+                System.out.println("average/mean");
                 int count = 0;
                 for (int i = 0;i < n; i++){
                     count += box[i];
