@@ -10,8 +10,9 @@ public class min_max_num {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int max;
+        int min;
 
-    /*    //using normal if_else for maximum
+       //using normal if_else for maximum
         if (a > b){
             max = a;
             System.out.println(max);
@@ -23,9 +24,9 @@ public class min_max_num {
         if (c > max){
             System.out.println(c);
         }
-     */
 
-        /*    //using normal if_else for minimum
+
+           //using normal if_else for minimum
         if (a < b){
             min = a;
             System.out.println(min);
@@ -37,10 +38,10 @@ public class min_max_num {
         if (c < min){
             System.out.println(c);
         }
-     */
 
 
-      /*  // using if-elif-else for maximum
+
+        // using if-elif-else for maximum
         if (a > b) {
             max = a;
             System.out.println(max);
@@ -51,9 +52,9 @@ public class min_max_num {
             max = b;
             System.out.println(max);
         }
-       */
 
-        /*  // using if-elif-else for minimum
+
+         // using if-elif-else for minimum
         if (a < b) {
             min = a;
             System.out.println(min);
@@ -64,7 +65,6 @@ public class min_max_num {
             min = b;
             System.out.println(min);
         }
-       */
 
 
         //using predefined class MATH.max()
@@ -74,13 +74,12 @@ public class min_max_num {
         int maximum = Math.max(max2,c);
         System.out.println(maximum);
 
-       /* //for minimum
+        //for minimum
         int min2 = Math.max(a,b) ;
         System.out.println(min2);
         int minimum = Math.min(min2,c);
         System.out.println(minimum);
-        */
-        
+
         sc.close();
     }
 
