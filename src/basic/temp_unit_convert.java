@@ -6,7 +6,7 @@ public class temp_unit_convert {
         System.out.println("Celsius to Fahrenheit Converter");
         System.out.println("Enter temperature in Celsius :");
         int C = sc.nextInt();
-        int F = (C * 9/5) + 32;
+        int F = (C * 9/5) + 32; //formula for convertion
         System.out.println("Temperature in Fahrenheit is :" + F);
         sc.close() ;
     }

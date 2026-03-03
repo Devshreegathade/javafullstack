@@ -102,8 +102,19 @@ public class arrayOperation {
                 int avg = count/n;
                 System.out.println(avg);
                 break;
-            case 8 :
+            case 9 :
+                int mid;
                 System.out.println("middle element");
+                if (n %2 == 0){
+                    mid = n/2;
+                }
+                else {
+                    mid = (n + 1)/2;
+                }
+                for (int i = 0; i < n; i++){
+
+                    System.out.println(box[mid]);
+                }
                 break;
 
             case 12 :
